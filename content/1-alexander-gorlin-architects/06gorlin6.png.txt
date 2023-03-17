@@ -1,0 +1,3 @@
+Bgcolor: 00FF00
+----
+Someinf: About Page

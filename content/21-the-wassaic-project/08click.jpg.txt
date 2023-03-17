@@ -1,0 +1,7 @@
+Bgcolor: 00FF00
+----
+Clickyurl: wassaicproject.org
+----
+Caption: http://gorlinarchitects.com
+----
+Someinf: As in, click.

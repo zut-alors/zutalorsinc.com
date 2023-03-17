@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>R IS FOR REST ASSURED</title>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.1.1/build/cssreset/reset-min.css">
+<style type="text/css">
+<!--
+html, body,td,th {
+	font-family: Times New Roman, Times, serif;
+	font-size: 13px;
+	color: #000;
+	background-color: #F00;
+	overflow:hidden;
+}
+body {
+	background-color: #F00;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.rest {
+	font-style:italic;
+	padding:20px;
+	width:360px;
+	cursor:default;
+}
+-->
+</style>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+
+var nVer = navigator.appVersion;
+var nAgt = navigator.userAgent;
+var browserName  = navigator.appName;
+var fullVersion  = ''+parseFloat(navigator.appVersion); 
+var majorVersion = parseInt(navigator.appVersion,10);
+var nameOffset,verOffset,ix;
+
+// In MSIE, the true version is after "MSIE" in userAgent
+if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+ browserName = "Microsoft Internet Explorer";
+ fullVersion = nAgt.substring(verOffset+5);
+}
+// In Opera, the true version is after "Opera" 
+else if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
+ browserName = "Opera";
+ fullVersion = nAgt.substring(verOffset+6);
+}
+// In Chrome, the true version is after "Chrome" 
+else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+ browserName = "Chrome";
+ fullVersion = nAgt.substring(verOffset+7);
+}
+// In Safari, the true version is after "Safari" 
+else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+ browserName = "Safari";
+ fullVersion = nAgt.substring(verOffset+7);
+}
+// In Firefox, the true version is after "Firefox" 
+else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+ browserName = "Firefox";
+ fullVersion = nAgt.substring(verOffset+8);
+}
+// In most other browsers, "name/version" is at the end of userAgent 
+else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < (verOffset=nAgt.lastIndexOf('/')) ) 
+{
+ browserName = nAgt.substring(nameOffset,verOffset);
+ fullVersion = nAgt.substring(verOffset+1);
+ if (browserName.toLowerCase()==browserName.toUpperCase()) {
+  browserName = navigator.appName;
+ }
+}
+// trim the fullVersion string at semicolon/space if present
+if ((ix=fullVersion.indexOf(";"))!=-1) fullVersion=fullVersion.substring(0,ix);
+if ((ix=fullVersion.indexOf(" "))!=-1) fullVersion=fullVersion.substring(0,ix);
+
+majorVersion = parseInt(''+fullVersion,10);
+if (isNaN(majorVersion)) {
+ fullVersion  = ''+parseFloat(navigator.appVersion); 
+ majorVersion = parseInt(navigator.appVersion,10);
+}
+
+
+if (browserName == "Chrome") {
+	var addedPx = 0;
+
+} else {
+
+var addedPx = 0;
+
+}
+
+function popUp(URL,W,H) {
+day = new Date();
+id = day.getTime();
+
+Hi = parseInt(H);
+Hb = eval(addedPx + Hi);
+
+
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=' + W + ',height=' + Hb);");
+}
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17480081-1']);
+  _gaq.push(['_setDomainName', '.zutalorsinc.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div class="rest">
+<table border="0" cellspacing="0" cellpadding="0" width="460">
+  <tr>
+    <td width="120"><a href="javascript:popUp('../2011/student.html',573,736)"><img src="../2011/images/student_tn.jpg" height="130" width="100" border="0" /></a></td>
+    <td width="120"><a href="javascript:popUp('../2011/atlason.html',776,370)"><img src="../2011/images/atlason_tn.jpg" height="130" width="100" border="0" /></a></td>
+    <td width="120"><a href="javascript:popUp('../2011/mom.html',582,740)"><img src="../2011/images/mom1_tn.jpg" height="130" width="100" border="0" /></a></td>
+    <td width="100"><a href="javascript:popUp('../2011/chart.html',664,600)"><img src="../2011/images/charts_porn_tn.jpg" height="130" width="100" border="0" /></a></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

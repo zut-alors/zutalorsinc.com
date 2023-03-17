@@ -1,0 +1,3 @@
+Imagescale: 1
+----
+Someinf: Logo

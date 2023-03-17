@@ -1,0 +1,975 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+@font-face {
+    font-family: 'zutalorsregular';
+    src: url('../zareg/zutfont.3-webfont.eot');
+    src: url('../zareg/zutfont.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../zareg/zutfont.3-webfont.woff') format('woff'),
+         url('../zareg/zutfont.3-webfont.ttf') format('truetype'),
+         url('../zareg/zutfont.3-webfont.svg#zutalorsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+
+
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+     -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+  user-select: none;
+ -webkit-touch-callout: none;
+ -webkit-user-select: none;
+-webkit-font-smoothing: antialiased;
+color: black;
+background-color: white;
+cursor: default;
+/*-webkit-transition: all .2s ease-in-out;
+*/}
+
+body {
+  opacity: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+  font-family: 'zutalorsregular';
+  font-size: 200px;
+  line-height:120%;
+  font-weight:normal;
+  letter-spacing: -1px;
+}
+
+#section-contact-about h1 {
+  font-size: 120px;
+}
+
+h2 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 80px;
+}
+
+h4 {
+    font-size: 70px;
+}
+
+h5 {
+    font-size: 60px;
+}
+
+h5 {
+    font-size: 50px;
+}
+
+h6 {
+  font-size: 400px;
+  letter-spacing: -20px;
+}
+
+nav {
+  text-align: center;
+  position: fixed;
+  top:0;
+  width: 100%;
+/*  border-bottom: 1px solid gray;*/
+  z-index: 200000;
+}
+
+nav:hover {
+
+
+}
+
+
+.sat {
+  position: fixed;
+  top:20px;
+  right: 20px;
+  z-index: 100000;
+  display: none;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'zutalorsregular';
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: normal;
+/*  background-color: white;
+*/  color:black;
+  line-height: 24px;
+}
+
+ul {
+  display: inline-block;
+  width: 320px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.mask {
+    top:0;
+  display: inline-block;
+  position: relative;
+  z-index: 200000;
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0);
+    /* Firefox */
+    -moz-transition: background-color 300ms linear;
+    /* WebKit */
+    -webkit-transition: background-color 300ms linear;
+    /* Opera */
+    -o-transition: background-color 300ms linear;
+    /* Standard */
+    transition: background-color 300ms linear;
+
+/*  background-color: white;
+*//*  border-bottom: 3px solid black;
+*/
+}
+
+#mainmenu {
+    box-sizing: border-box;
+    position: relative;
+}
+
+li {
+/*  display: none;
+*/  
+position: relative;
+}
+
+li:hover {
+
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 24px;
+  text-align: center;
+  height: 24px;
+
+}
+
+
+
+/*.open {
+  background-color: white;
+}*/
+
+nav.open a {
+  color: black;
+}
+
+.god {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+  cursor: pointer;
+    font-family: 'zutalorsregular';
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 18px;
+  z-index:100000;
+}
+
+
+
+
+ul:hover li {
+  display: block;
+}
+
+li.active {
+  display: block;
+  color: black;
+}
+
+li.active  a {
+  color: black;
+}
+
+
+
+nav a:hover {
+  color: #ccc;
+}
+
+
+
+
+
+.photo-slide {
+  /*
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;*/
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+}
+
+.video-slide {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.video-slide iframe {
+  z-index: 100000;
+  position: relative;
+}
+
+
+.app-logo, .app-logo-background, .top-left, .top-right, .location-show-caption {
+  display: none !important;
+}
+
+
+
+
+
+
+
+#home {
+
+    z-index: 220000;
+
+}
+
+.bigtext {
+  z-index: 220000;
+}
+
+.controlArrow {
+    position: absolute;
+    top:10px;
+    bottom:10px;
+}
+
+.updownArrow {
+    position: fixed;
+    left:10px;
+    right: 10px;
+}
+
+
+
+.controlArrow.prev {
+    left:10px;
+    right:50%;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjYwIj48cG9seWdvbiBwb2ludHM9IjMwLDAgMCwzMCAzMCw2MCIgc3R5bGU9ImZpbGw6IzAwMDAwMCIgLz48L3N2Zz4=') 15 30, auto;
+}
+
+.controlArrow.next {
+    right:10px;
+    left: 50%;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMwIiBoZWlnaHQ9IjYwIj48cG9seWdvbiBwb2ludHM9IjAsMCAzMCwzMCAwLDYwIiBzdHlsZT0iZmlsbDojMDAwMDAwIiAvPjwvc3ZnPg==') 15 30, auto;
+}
+
+
+.updownArrow.up {
+    top:10px;
+    bottom:80%;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjYwIiBoZWlnaHQ9IjMwIj48cG9seWdvbiBwb2ludHM9IjAsMzAgMzAsMCA2MCwzMCIgc3R5bGU9ImZpbGw6IzAwMDAwMCIgLz48L3N2Zz4=') 30 15, auto;
+    z-index: 10;
+}
+
+.updownArrow.down {
+    bottom:10px;
+    top: 80%;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjYwIiBoZWlnaHQ9IjMwIj48cG9seWdvbiBwb2ludHM9IjAsMCAzMCwzMCA2MCwwIiBzdHlsZT0iZmlsbDojMDAwMDAwIiAvPjwvc3ZnPg==') 30 15, auto;
+    z-index: 5;
+}
+
+#section-contact {
+  position: relative;
+  z-index: 8;
+
+}
+
+.homeoverlay {
+  position: absolute;
+  top:10px;
+  left:10px;
+  right:10px;
+  bottom:10px;
+    cursor: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjYwIiBoZWlnaHQ9IjMwIj48cG9seWdvbiBwb2ludHM9IjAsMCAzMCwzMCA2MCwwIiBzdHlsZT0iZmlsbDojRkZGRkZGIiAvPjwvc3ZnPg==') 30 15, auto;
+      z-index: 300000;
+}
+
+
+
+.slide {
+  padding:60px;
+/*  padding-top: 65px;*/  
+box-sizing: border-box;
+position: relative;
+}
+
+.webviewer {
+  padding: 60px;
+}
+
+.text {
+  margin:0;
+  padding:0;
+
+    padding:60px;
+/*    padding-top:105px;
+*/  box-sizing: border-box;
+
+
+}
+
+.micro-setcolor {
+  background-color: orange;
+}
+
+.dundunbtn {
+  position: absolute;
+  height: 41%;
+  width:14%;
+  z-index: 300040;
+  bottom: 8%;
+  right: 18%;
+  cursor: pointer;
+}
+
+audio {
+  display: none;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+  font-family: 'zutalorsregular';
+  font-size: 200px;
+  line-height:120%;
+    font-weight:normal;
+}
+
+.inner-contact {
+    width: 100%;
+    height: 100%;
+  font-family: 'zutalorsregular';
+  font-size: 8vw;
+  line-height:120%;
+    font-weight:normal;
+}
+
+
+.inner-micro {
+    width: 100%;
+    height: 100%;
+  font-family: 'zutalorsregular';
+  font-size: 14px;
+  line-height:120%;
+    font-weight:normal;
+}
+
+
+
+.infoon a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+
+
+
+
+.closer {
+  position: fixed;
+font-size: 16px;
+z-index: 100000;
+top: 3px;
+right: 20px;
+padding: 10px;
+cursor: pointer;
+font-family: 'zutalorsregular';
+text-transform: uppercase;
+font-size: 20px;
+line-height: 18px;
+z-index: 400000;
+}
+
+.mega {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+
+.bubble { 
+  display: table; 
+height: 100%;
+width: 100%;
+}
+
+.bubble h1 {
+font-size: 523px;
+line-height: 0;
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+.zahome {
+  position: fixed;
+  top:0;
+  left: 0;
+display: none;
+}
+
+
+
+
+.text a {
+  border-bottom:16px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+.micro-text a {
+  border-bottom:1px solid black;
+  text-decoration: none;
+  color: black;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+.home {
+  background-color: black;
+  z-index: 11000;
+  padding: 60px;
+}
+
+.homeslide, .micro-homeslide {
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgICB3aWR0aD0iNDgzLjg3NnB4IiBoZWlnaHQ9IjI4OC42NjhweCIgdmlld0JveD0iMCAwIDQ4My44NzYgMjg4LjY2OCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNDgzLjg3NiAyODguNjY4IiAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTc0LjA1MiwwLjAwMSAyNTUuMTczLDAuMDAxIDI1NS4xNzMsMjUuMDY1ICAyMjcuODEzLDI1LjA2NSAyMjcuODEzLDEzNC41MzkgMjAxLjQxMSwxMzQuNTM5IDIwMS40MTEsMjUuMDY1IDE3NC4wNjksMjUuMDY1ICIvPjxwb2x5Z29uIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ijk3Ljc4MywxNTEuMDMxIDk3Ljc4MywyODUuNTY5IDE2Ni40MjgsMjg1LjU2OSAgIDE2Ni40MjgsMjU5LjYwOSAxMjQuNjg1LDI1OS42MDkgMTI0LjY4NSwxNTEuMDMxICIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBkPSJNMjEzLjI1LDE0OC4wMTJjMjIuODU5LDAsNDEuNDU2LDE3Ljg3LDQxLjQ1NiwzOS44MzZ2NjAuNTY0IGMwLDIxLjk2Ni0xOC41OTcsMzkuODM2LTQxLjQ1NiwzOS44MzZzLTQxLjQ1Ni0xNy44Ny00MS40NTYtMzkuODM2di02MC41NjRDMTcxLjc5NCwxNjUuODgyLDE5MC4zOTIsMTQ4LjAxMiwyMTMuMjUsMTQ4LjAxMnogIE0xOTguNDMyLDI0OC40MTNjMCw3Ljc4NCw2LjYzNCwxNC4wOTUsMTQuODE4LDE0LjA5NXMxNC44MTgtNi4zMTEsMTQuODE4LTE0LjA5NXYtNjAuNTY0YzAtNy43ODQtNi42MzUtMTQuMDk1LTE0LjgxOC0xNC4wOTUgIGMtOC4xODUsMC0xNC44MTgsNi4zMTEtMTQuODE4LDE0LjA5NVYyNDguNDEzeiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBkPSJNMTY2LjU5Miwwdjk4LjEwN2MwLDIxLjU1Ny0xNy42MzYsMzkuMDk0LTM5LjMxNCwzOS4wOTQgIGMtMjEuNjc4LDAtMzkuMzE0LTE3LjUzNy0zOS4zMTQtMzkuMDk0VjBoMjUuMjYxdjk3LjEwOGMwLDcuNjM5LDYuMjkyLDEzLjgzMiwxNC4wNTMsMTMuODMyYzcuNzYyLDAsMTQuMDUzLTYuMTkzLDE0LjA1My0xMy44MzJWMCAgSDE2Ni41OTJ6Ii8+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNGRkZGRkYiIGQ9Ik00ODMuODc2LDI3Mi45ODNjMCw4LjU3OC03LjIzNiwxNS41MzEtMTYuMTYzLDE1LjUzMSBzLTE2LjE2NC02Ljk1My0xNi4xNjQtMTUuNTMxczcuMjM3LTE1LjUzMSwxNi4xNjQtMTUuNTMxUzQ4My44NzYsMjY0LjQwNSw0ODMuODc2LDI3Mi45ODN6IE00ODAuOTYyLDE1Mi4zNDloLTI2LjQ5OXY5NS44ODJoMjYuNDk5IFYxNTIuMzQ5eiIvPjxwb2x5Z29uIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUwLjU4NywyNS40OTYgOS4xMzYsMjUuNDk2IDkuMTM2LDAuMDAxIDc5Ljk1OSwwLjAwMSAgIDc5Ljk3NSwyNC41NjUgMzUuNzA0LDEwOS4wNDQgODAuODc2LDEwOS4wNDQgODAuODc2LDEzNC41MzkgNS43NTgsMTM0LjUzOSA1Ljc1OCwxMTAuODY1ICIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBkPSJNMzIuMjMxLDI1OC4wMDlsLTQuODE0LDI3LjU2SDBsMjkuODI0LTEzNC42ODFoMzAuNjkyICBsMjkuODI1LDEzNC42ODFINjIuOTIzbC00LjgxMS0yNy41NkgzMi4yMzF6IE01My44MDksMjMzLjM1MWwtOC42MzItNDkuNDUybC04LjYzOSw0OS40NTJINTMuODA5eiIvPjxnPiA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0ZGRkZGRiIgZD0iTTM1Ni41NjIsMTc4Ljk3NWMtMi41MjIsMTEuMzY5LTEuODIzLDI2LjQyNCwxMC40MTUsMzYuOTk4ICAgYzE5LjA2MiwxNi40NzEsNDkuMTY2LDEwLjEyNiw0OS4xNjYsMjkuNTc0YzAsMTMuMzI0LTExLjU5OSwxNS45NzgtMTUuODA1LDE1Ljk3OGMtMy41NjYsMC0xOC41MDYtMC42MTgtMTguNTA2LTIxLjMyMyAgIGMwLTAuOTk1LDAtMy4xMjQsMC0zLjEyNGwtMjcuNzU3LDAuMDA1Yy0wLjMxNCw3LjY2NywwLjE5NywxMi41MTUsMC4xOTcsMTIuNTE1YzEuOTQ5LDIwLjgzLDIwLjY0NywzOS4wNzEsNDQuNTQ4LDM5LjA3MSAgIGMxMS44NjEsMCwyMy40NzktMy43ODksMzEuODE5LTExLjU2MmMzLjAwOS0yLjgwNSwxNS45NS0xNi45MSwxMy40NDItMzcuMzU0Yy0xLjg3My0xNS4yNzgtMTIuMjgxLTI2LjE0Ny0yOC45ODktMzAuNzIxICAgIGMtMTYuMzYxLTQuNDc4LTMwLjQ1Ni02Ljc4NC0zMi44NzYtMTguMTM3Yy0yLjQwNS0xMS4yODksNS4xODctMTkuMzEsMTQuOTU5LTE5LjMxYzkuODA5LDAsMTYuNTA2LDUuMzA0LDE2LjUwNiwxNS4zNjZ2My45MDcgICBoMjcuMzc0di0zLjkwN2MwLTIyLjg5Ni0xNi4zNDEtMzkuMzAyLTQyLjUyNS0zOS4zMDJDMzc1Ljg3NSwxNDcuNjUxLDM2MC4xODYsMTYyLjY1LDM1Ni41NjIsMTc4Ljk3NXoiLz48L2c+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNGRkZGRkYiIGQ9Ik0zMDUuNTg2LDIzMy4zNTFsMTUuMDIyLDUyLjIwMmgyOC4wMmwtMTkuMjA1LTU5LjQxOCBjNS45MDctMy45NzksMTguNTA3LTE0Ljk1OSwxOC41MDctMzYuMjQ1YzAtMTcuMzY3LTguNjc2LTMwLjc0LTI2LjEzOC0zNi4yMDRjLTcuNzgxLTIuNDM1LTE2LjE0Ni0yLjcyLTE5LjY0OS0yLjcyICBjLTAuMDIzLDAtMzguMjUxLDAuMDA4LTM4LjI1MSwwLjAwOGwtMC4xMTYsMTM0LjYwNGgyNi40OHYtNTIuMjNMMzA1LjU4NiwyMzMuMzUxeiBNMjkwLjI1NiwyMDguNjZ2LTMzLjgxNGgxNC40NCAgYzQuNzk4LDAsMTcuMDgsMS4xMTgsMTcuMDgsMTcuODc4YzAsMC4wMjEsMCwwLjA0MSwwLDAuMDYyYzAsMTYuMTI3LTEzLjQ2NSwxNS44NzUtMTcuMDgsMTUuODc1SDI5MC4yNTZ6Ii8+PC9zdmc+') no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+.occipital-viewer {
+  cursor: move;
+}
+
+.godview {
+  background-color: white;
+  z-index: 300000;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 0;
+  white-space:nowrap;
+  overflow: auto;
+  z-index: -1;
+}
+
+.godinside {
+  padding: 30px;
+  display: inline-block;
+  position: absolute;
+
+}
+
+
+.micro-slide {
+  width:48px;
+  height: 30px;
+  background-color: white;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  padding: 3px;
+  cursor: pointer;
+  opacity: 0;
+  vertical-align: top;
+}
+
+.micro-photo-slide {
+  width: 100%;
+  height: 100%;
+}
+
+#micro-home .micro-slide {
+  background-color: black;
+}
+
+
+.micro-text, .micro-inner {
+  white-space:normal;
+  font-size: 14px;
+  font-family: 'zutalorsregular';
+  line-height:120%;
+  font-weight:normal;
+}
+
+.micro-mega {
+  background-color: black;
+  color: white;
+  text-align: center;
+  cursor: default;
+}
+
+.micro-bubble { 
+  display: table; 
+  height: 100%;
+  width: 100%;
+}
+
+.micro-bubble h1 {
+  letter-spacing: 0;
+  font-size: 18px;
+  line-height: 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.caption {
+  position: absolute;
+  bottom:0;
+  left:0;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 16px;
+  z-index: 100;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  display: none;
+}
+
+.infobug {
+  position: absolute;
+  font-size: 16px;
+  z-index: 100000;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'zutalorsregular';
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.imgslideshow {
+  position: relative;
+}
+
+.slideshow-stack {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.infoon {
+  position: absolute;
+  font-size: 16px;
+  z-index: 100001;
+  display: none;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'zutalorsregular';
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.clicky  {
+  margin:0;
+  padding:0;
+  font-family: 'zutalorsregular';
+  font-size: 400px;
+  font-weight:normal;
+  text-align: center;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.clicky a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  z-index: 100000;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile .home {
+  padding:40px;
+}
+
+@media only screen and (max-width: 640px) {
+
+  body {
+  opacity: 1;
+}
+   #outer {
+    display: none;
+   }
+
+   .mobile {
+  display: block;
+  height: 100%;
+  overflow: scroll; 
+  -webkit-overflow-scrolling: touch;
+}
+
+
+   .inner-mobile {
+      font-family: 'zutalorsregular';
+  font-size: 22px;
+  line-height: 120%;
+  padding:40px;
+
+   }
+
+   .inner-mobile a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+   }
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

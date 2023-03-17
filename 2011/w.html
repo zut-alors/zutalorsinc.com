@@ -1,0 +1,1282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>T IS FOR TRAVAILLER</title>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.1.1/build/cssreset/reset-min.css">
+<style type="text/css">
+<!--
+html, body,td,th {
+	font-family: Times New Roman, Times, serif;
+	font-size: 13px;
+	line-height:20px;
+	color: #000;
+	background-color: #FFF;
+	overflow:hidden;
+}
+body {
+	background-color: #FFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.about {
+	font-style:italic;
+	padding:0px;
+	padding-top:20px;
+	width:1100px;
+	cursor:default;
+	text-align:center;
+}
+
+.aboutone {
+	font-style:italic;
+	padding:0px;
+	padding-top:20px;
+	width:1100px;
+	cursor:default;
+	text-align:center;
+	background-color:#FFF;
+	height:100%;
+}
+
+.items {
+	padding:0px;
+	width:100%;
+	cursor:default;
+}
+
+.hoverl {
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+.hoverrblink {
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:10;
+}
+
+.hoverr {
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:20;
+}
+
+
+h1 {text-align:center;
+padding-bottom:0px;
+}
+
+.bottom {text-align:center;
+font-size:13px;
+padding-top:20px;
+width:100%;
+}.bottomwht {text-align:center;
+font-size:13px;
+padding:0px;
+width:100%;
+color:#FF33CC;
+}
+
+.wht {
+	color:#FF33CC;
+}
+
+
+strong {
+	font-style:italic;
+color:#FF33CC;
+}
+
+
+.gallery {
+  overflow: hidden;
+}
+
+/* --------------------------------------- DONT CHANGE ---------------------- */
+
+.isg_container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+table.isg_table {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  border-spacing: 0;
+  border: none;
+}
+
+table.isg_table img { border: none; }
+
+table.isg_table tr {
+  margin: 0;
+  padding: 0;
+}
+
+table.isg_table td {
+  margin: 0;
+  padding: 0;
+}
+
+.isg_markup-wrapper {
+  overflow: hidden;
+}
+
+.isg_controller-wrapper {
+  float: left;
+  width: 100%;
+}
+a:link {
+	color: #FF33CC;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF33CC;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF33CC;
+}
+a:active {
+	text-decoration: none;
+	color: #0FF;
+}
+
+a{
+outline:none;
+}
+
+
+
+-->
+</style>
+<script src="js/prototype.js" language="JavaScript" type="text/javascript"></script>
+<script src="js/BM_ImageShiftGallery.js" language="JavaScript" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var galleries = [];
+  function isg_init() {
+
+
+var allsections = {
+	a: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/atlason_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Icon set</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/atlason_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Logo</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      
+		  	 	  	  	  	  	  	        {
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="work_new/atlason_01.jpg" width="1060" height="620" /></div><div class="bottom">Tee-shirt (heads)</div>\
+</div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },		  	  	
+	  {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/atlason_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Tee-shirt (tails)</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/atlason_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">The bike itself</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      b: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Auction Catalogue: Robert H. Blumenfeld Collection</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+            {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_06.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_07.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+
+      
+            {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_10.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 3</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+                  {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_09.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 4</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      
+		  	 	  	  	  	  	  	        {
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="work_new/christies_01.jpg" width="1060" height="620" /></div><div class="bottom">Back cover</div>\
+</div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      	 
+	 
+	 	  {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Auction Catalogue: Four Modern Masterpieces</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Dust jacket!</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_08.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+            {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/christies_11.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 3</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      c: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/illustration_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">&ldquo;Politicians Lag U.S. Voters on Gay Marriage&rdquo;<br /><span style="font-style:normal;">Bloomberg View</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/illustration_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">&ldquo;Meet Your Gaggle: Crowdsourced Love Is Ready for RomCom&rdquo;<br /><span style="font-style:normal;">The New York Observer</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/illustration_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">&ldquo;It&rsquo;s My Party, and You Have to Answer&rdquo;<br /><span style="font-style:normal;">New York Times</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      d: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/ifs_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">The cover</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/ifs_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">The spine</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/ifs_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/ifs_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      f: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/sex_typography.gif" height="620" /></div> \
+<div class="bottom">Invitation</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }, 
+      
+       	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/sex_type_06.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Ships in the night</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }, 
+      	
+	
+		  		  	  	  	  	  {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/sex_type_100_edit.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Long-term relationship</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }, 
+      	       	  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/sex_type_09.jpg" width="1060" height="620" /></div> \
+<div class="bottom">The couch</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+
+		  	  	  	  	  	  	  	             	  {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/sex_type_07.jpg" width="1060" height="620" /></div> \
+<div class="bottom">First date</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      	  
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/sex_type_08.jpg" width="1060" height="620" /></div> \
+<div class="bottom">The Morning After 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/sex_type_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">The Morning After 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/sex_type_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom"></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      g: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/mike_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Cover</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/mike_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Dust jacket!</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/mike_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/mike_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Gatefold reveal</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/mike_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/mike_06.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 3</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/mike_07.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Hidden essay</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      h: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyo_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Derek Jeter<br /><span style="font-style:normal;">The New York Observer</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyo_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Money Makes the Man!<br /><span style="font-style:normal;">The New York Observer</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyo_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Recession!?! Happy Holidaze!<br /><span style="font-style:normal;">The New York Observer</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyo_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">What Banking Crisis?<br /><span style="font-style:normal;">The New York Observer</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyo_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Juice!<br /><span style="font-style:normal;">The New York Observer</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyo_06.jpg" width="1060" height="620" /></div> \
+<div class="bottom">A vs B<br /><span style="font-style:normal;">The New York Observer</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      
+      
+    
+		  	
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/good_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Let Them Eat Meat!<br /><span style="font-style:normal;">Good Magazine</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/good_04_detail.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Let Them Eat Meat! (detail)<br /><span style="font-style:normal;">Good Magazine</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+		  	 	  	  	  	  	  	        {
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="work_new/good_01.jpg" width="1060" height="620" /></div><div class="bottom">Breaking the Law<br /><span style="font-style:normal;">Good Magazine</span></div>\
+</div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },	
+      
+      	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/good_01_detail.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Breaking the Law (detail)<br /><span style="font-style:normal;">Good Magazine</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },	  	  	
+	  {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/good_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">There&rsquo;s No Place Like Home<br /><span style="font-style:normal;">Good Magazine</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/good_02_detail.jpg" width="1060" height="620" /></div> \
+<div class="bottom">There&rsquo;s No Place Like Home (detail)<br /><span style="font-style:normal;">Good Magazine</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/good_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Reading is Fun and Mental<br /><span style="font-style:normal;">Good Magazine</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/good_03_detail.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Reading is Fun and Mental (detail)<br /><span style="font-style:normal;">Good Magazine</span></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      i: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyph_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Poster</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyph_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Festival Guide</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyph_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+            {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyph_06.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example spread 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+            {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyph_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Things to do with empty space</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      
+      	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/nyph_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Back cover</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      k: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/object_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Trophy</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/object_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Pencils: Pratt Institute Graduation Gift 2011 (Copywriting)</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/object_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">CD Package</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/object_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Skateboard</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/object_06.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Type-59 Tank and Pawn</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/object_07.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Candle Holders</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/object_08.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Paperweight</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/object_09.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Business Cards</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      l: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/pratt_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Halloween</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/pratt_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Mandatory elective course lecture: intro</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+            {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/pratt_02_detail.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Intro (detail)</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/pratt_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Mandatory elective course lecture: rising action / apex</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+            {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/pratt_03_detail.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Rising action / apex (detail)</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/pratt_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Mandatory elective course lecture: falling action / conclusion</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+            {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/pratt_04_detail.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Falling action / conclusion (detail)</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      m: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/yale_gd_open.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Yale Graphic Design MFA 2011<br /><a href="http://yalegraphicdesign.info" target="_blank">www.yalegraphicdesign.info</a></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+       	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/website_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Yale Graphic Design MFA 2011<br /><a href="http://yalegraphicdesign.info" target="_blank">www.yalegraphicdesign.info</a></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+       	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/website_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Yale Graphic Design MFA 2011<br /><a href="http://yalegraphicdesign.info" target="_blank">www.yalegraphicdesign.info</a></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      
+       	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/website_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Investment Futures Strategy, Ltd.<br /><a href="http://ifs-l.biz" target="_blank">www.ifs-l.biz</a></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      
+       	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/website_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">A Pawn&rsquo;s Rebellion<br /><a href="http://apawnsrebellion.com" target="_blank">www.apawnsrebellion.com</a></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+       	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/website_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">A Pawn&rsquo;s Rebellion<br /><a href="http://apawnsrebellion.com" target="_blank">www.apawnsrebellion.com</a></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      n: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/ra45_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Sticker / Logo</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/ra45_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Record & Sleeve 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/ra45_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Record 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/ra45_06.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Record & Sleeve 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/ra45_07.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Mixtape Cover</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/ra45_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Website<br /><a href="http://redapples45.com" target="_blank">www.redapples45.com</a></div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      p: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/teeshirt_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Def Jux 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/djx.gif" height="620" /></div> \
+<div class="bottom">Def Jux 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/teeshirt_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">The Riggler</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/teeshirt_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">The Riggler (interior)</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+     
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/teeshirt_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Snoop (front)</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/teeshirt_05a.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Snoop (back)</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      q: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/thesis_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Cover / Application for Graduate Study</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/thesis_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example Spread 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/thesis_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example Spread 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/thesis_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Example Spread 3</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }],
+      r: [{
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_card_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Business Card 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_card_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Business Card 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_card_02.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Business Card 3</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+
+
+      
+       	   	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_09.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Opening Announcement 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_08.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Opening Announcement 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_06.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Opening Announcement 3</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_04.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Opening Announcement 4</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_05.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Opening Announcement 5</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_10.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Opening Announcement 6</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_11.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Portfolio 1</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      	  
+      {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_03.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Portfolio 2</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+      
+      
+      {
+        markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_01.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Portfolio 3</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      },
+	  
+
+
+
+            {
+              markup:   '<div class="about">\
+<div class="items"><img src="work_new/za_mailer_12.jpg" width="1060" height="620" /></div> \
+<div class="bottom">Portfolio 4</div></div>',
+        width:    1100,
+        height:   800,
+        padding:  20
+      }]
+};
+
+
+var queryDict = {}
+location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
+
+var queriedSection = queryDict.n;
+var getsection = allsections.a;
+if (queryDict.n == "b") {
+	getsection = allsections.b;
+}
+if (queryDict.n == "c") {
+	getsection = allsections.c;
+}
+if (queryDict.n == "d") {
+	getsection = allsections.d;
+}
+if (queryDict.n == "e") {
+	getsection = allsections.e;
+}
+if (queryDict.n == "f") {
+	getsection = allsections.f;
+}
+if (queryDict.n == "g") {
+	getsection = allsections.g;
+}
+if (queryDict.n == "h") {
+	getsection = allsections.h;
+}
+if (queryDict.n == "i") {
+	getsection = allsections.i;
+}
+if (queryDict.n == "j") {
+	getsection = allsections.j;
+}
+if (queryDict.n == "k") {
+	getsection = allsections.k;
+}
+if (queryDict.n == "l") {
+	getsection = allsections.l;
+}
+if (queryDict.n == "m") {
+	getsection = allsections.m;
+}
+if (queryDict.n == "n") {
+	getsection = allsections.n;
+}
+if (queryDict.n == "o") {
+	getsection = allsections.o;
+}
+if (queryDict.n == "p") {
+	getsection = allsections.p;
+}
+if (queryDict.n == "q") {
+	getsection = allsections.q;
+}
+if (queryDict.n == "r") {
+	getsection = allsections.r;
+}
+if (queryDict.n == "s") {
+	getsection = allsections.s;
+}
+
+
+    galleries.push(new com.buzamoto.ImageShiftGallery.Gallery('gallery',getsection));
+   
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // EVENTS
+  Event.observe(window, 'load', isg_init, false);
+</script>
+
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17480081-1']);
+  _gaq.push(['_setDomainName', '.zutalorsinc.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/grad_pnk_l_smaller.png','images/grad_pnk_r_smaller.png')">
+
+<div id="gallery" class="gallery" style="position: relative; width: 100%;"></div>
+
+<div class="hoverrblink"><img src="images/grad_pnk_r_blink.gif" name="blinkerr" width="150" height="1000" border="0" id="blinkerr" /></div>
+  
+  <div class="hoverl"><a href="#" id="gallery_prev" class="isg_button" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('l','','images/grad_pnk_l_smaller.png',1)"><img src="images/grad_off.png" name="l" width="150" height="1000" border="0" id="l" /></a></div>
+<div class="hoverr"><a href="#" id="gallery_next" class="isg_button" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r','','images/grad_pnk_r_smaller.png',1)"><img src="images/grad_off.png" name="r" width="150" height="1000" border="0" id="r" /></a></div>
+
+  
+</body>
+
+</html>

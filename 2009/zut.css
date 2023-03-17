@@ -1,0 +1,24 @@
+body {
+text-align: center;
+margin: 0px;
+}
+
+#holder {
+margin: 0px;
+width: 1200px;
+}
+
+#left {
+float: left;
+}
+
+#zz a {
+float: left;
+width: 309px;
+height: 538px;
+background: url("images/zz.jpg") 0 0 no-repeat;
+}
+
+#zz a:hover {
+background-position: right bottom;
+}

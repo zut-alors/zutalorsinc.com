@@ -1,0 +1,7 @@
+Title: The Wassaic Project
+----
+Text: Hansel and Gretel traipse through the woods and happen upon an art installation that shows a wolf, standing on his hind legs in human clothes (a woolen shawl, small wireframe glasses and a bonnet to be specific), mouth agape, with a small girl, in a peculiar red cloak, cowering in front of said wolf.
+----
+Fontsize: 3
+----
+Relatedimgs: 

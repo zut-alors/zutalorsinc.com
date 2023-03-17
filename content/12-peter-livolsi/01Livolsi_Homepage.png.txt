@@ -1,0 +1,3 @@
+Bgcolor: yes
+----
+Someinf: Homepage

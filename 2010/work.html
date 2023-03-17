@@ -1,0 +1,906 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>T IS FOR TRAVAILLER</title>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.1.1/build/cssreset/reset-min.css">
+<style type="text/css">
+<!--
+html, body,td,th {
+	font-family: Times New Roman, Times, serif;
+	font-size: 13px;
+	line-height:20px;
+	color: #000;
+	background-color: #FFF;
+	overflow:hidden;
+}
+body {
+	background-color: #FFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.about {
+	font-style:italic;
+	padding:0px;
+	padding-top:20px;
+	width:712px;
+	cursor:default;
+	text-align:center;
+}
+
+.aboutone {
+	font-style:italic;
+	padding:0px;
+	padding-top:20px;
+	width:712px;
+	cursor:default;
+	text-align:center;
+	background-color:#FFF;
+	height:100%;
+}
+
+.items {
+	padding:0px;
+	width:100%;
+	cursor:default;
+}
+
+.hoverl {
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+.hoverrblink {
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:10;
+}
+
+.hoverr {
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:20;
+}
+
+
+h1 {text-align:center;
+padding-bottom:0px;
+}
+
+.bottom {text-align:center;
+font-size:13px;
+padding-top:20px;
+width:100%;
+}.bottomwht {text-align:center;
+font-size:13px;
+padding:0px;
+width:100%;
+color:#FF33CC;
+}
+
+.wht {
+	color:#FF33CC;
+}
+
+
+strong {
+	font-style:italic;
+color:#FF33CC;
+}
+
+
+.gallery {
+  overflow: hidden;
+}
+
+/* --------------------------------------- DONT CHANGE ---------------------- */
+
+.isg_container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+table.isg_table {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  border-spacing: 0;
+  border: none;
+}
+
+table.isg_table img { border: none; }
+
+table.isg_table tr {
+  margin: 0;
+  padding: 0;
+}
+
+table.isg_table td {
+  margin: 0;
+  padding: 0;
+}
+
+.isg_markup-wrapper {
+  overflow: hidden;
+}
+
+.isg_controller-wrapper {
+  float: left;
+  width: 100%;
+}
+a:link {
+	color: #FF33CC;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF33CC;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF33CC;
+}
+a:active {
+	text-decoration: none;
+	color: #0FF;
+}
+
+a{
+outline:none;
+}
+
+
+
+-->
+</style>
+<script src="../2011/js/prototype.js" language="JavaScript" type="text/javascript"></script>
+<script src="../2011/js/BM_ImageShiftGallery.js" language="JavaScript" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+var queryDict = {}
+location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]});
+
+console.log(queryDict.n);
+
+
+
+var worksects = {
+	a: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/a_lg.png" width="640" height="480" /></div><div class="bottomwht"><span class="wht">Good Magazine</span><br />Infographics for the magazine&#8217;s on-line Transparency column.</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },		  	  	
+	  {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/good/good1.jpg" width="640" height="480" /></div> \
+<div class="bottom">"Cities Hit Hardest by Foreclosures"</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/good/good2.jpg" width="640" height="480" /></div> \
+<div class="bottom">Foreclosures (detail)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/good/good3.jpg" width="640" height="480" /></div> \
+<div class="bottom">"World Literacy Day"</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/good/good4.jpg" width="640" height="480" /></div> \
+<div class="bottom">Literacy day (detail)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/good/good5.jpg" width="640" height="480" /></div> \
+<div class="bottom">"Which Countries Eat the Most Meat"</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/good/good6.jpg" width="640" height="480" /></div> \
+<div class="bottom">Meat consumption (detail)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/good/good7.jpg" width="640" height="480" /></div> \
+<div class="bottom">"The Most Committed Crimes in the Country"</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/good/good8.jpg" width="640" height="480" /></div> \
+<div class="bottom">Crimes committed (detail)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      b: [{
+        markup:   '<div class="aboutone" id="card_two">\
+<div class="items"><img src="../2011/images/work_letters/b_lg.png" width="640" height="480" /></div><div class="bottomwht">Brass Rat<br />Logo, business card, and website for California-based engineers</div>\</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },    {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/brass_rat/brs_logo.gif" width="640" height="480" /></div> \
+<div class="bottom">Logo</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/brass_rat/brs_card.gif" width="640" height="480" /></div> \
+<div class="bottom">Business card</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+
+	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/brass_rat/br3.jpg" width="640" height="480" /></div> \
+<div class="bottom">Website homepage (in development)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      c: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/c_lg.png" width="640" height="480" /></div><div class="bottomwht">Atlason Racing<br />Icons, logo, collateral, website and vehicle graphics for a motorcycle racing team.<br />Ideation / Copywriting: Zut Alors / Atlason; Design+Illustration: Zut Alors</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/atlason/atlason1.jpg" width="640" height="480" /></div> \
+<div class="bottom">8 / 20 icons</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/atlason/atlason2.jpg" width="640" height="480" /></div> \
+<div class="bottom">Logo</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/atlason/atlason3.jpg" width="640" height="480" /></div> \
+<div class="bottom">Tee-shirt (heads)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/atlason/atlason4.jpg" width="640" height="480" /></div> \
+<div class="bottom">Tee-shirt (tails)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/atlason/atlason5.jpg" width="640" height="480" /></div> \
+<div class="bottom">Website homepage (in development)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/atlason/atlason6.jpg" width="640" height="480" /></div> \
+<div class="bottom">Website sample page (in development)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/atlason/atlason7.jpg" width="640" height="480" /></div> \
+<div class="bottom">The bike itself</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      d: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/d_lg.png" width="640" height="480" /></div><div class="bottomwht">Christie&#8217;s<br />Art direction and design of this sale catalogue for the venerable auction house. The sale did<br />(roughly) 13 million dollars in business. This was, obviously, because of the catalogue.</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },	   
+	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/christies/christies1.jpg" width="640" height="480" /></div> \
+<div class="bottom">Cover</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/christies/christies2.jpg" width="640" height="480" /></div> \
+<div class="bottom">Sample spread 1</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/christies/christies3.jpg" width="640" height="480" /></div> \
+<div class="bottom">Sample spread 2</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/christies/christies4.jpg" width="640" height="480" /></div> \
+<div class="bottom">Sample spread 3</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/christies/christies5.jpg" width="640" height="480" /></div> \
+<div class="bottom">Sample spread 4</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/christies/christies6.jpg" width="640" height="480" /></div> \
+<div class="bottom">Back cover</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      e: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/e_lg.png" width="640" height="480" /></div><div class="bottomwht">Proposed Product Design<br />These items were designed for presentation to various manufacturers.<br />If you are interested please do get in touch.</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+
+	  	  
+	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/products/paper_weight.jpg" width="640" height="480" /></div> \
+<div class="bottom">Paper airplane paperweight</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	  	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/products/breaking_news.jpg" width="640" height="480" /></div> \
+<div class="bottom">A set of candle holders</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      f: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/f_lg.png" width="640" height="480" /></div><div class="bottomwht">Pratt<br />Two posters; one for a Halloween party, and a set advertising a lecture.</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/pratt/pratt1.jpg" width="640" height="480" /></div> \
+<div class="bottom">Halloween</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 
+	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/pratt/pratt2.jpg" width="640" height="480" /></div> \
+<div class="bottom">Mandatory elective course lecture: intro</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 
+	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/pratt/pratt3.jpg" width="640" height="480" /></div> \
+<div class="bottom">Intro (detail)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 
+	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/pratt/pratt4.jpg" width="640" height="480" /></div> \
+<div class="bottom">Mandatory elective course lecture: rising action / apex</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 
+	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/pratt/pratt5.jpg" width="640" height="480" /></div> \
+<div class="bottom">Rising action / apex (detail) </div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 
+	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/pratt/pratt6.jpg" width="640" height="480" /></div> \
+<div class="bottom">Mandatory elective course lecture: falling action / conclusion</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 
+	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/pratt/pratt7.jpg" width="640" height="480" /></div> \
+<div class="bottom">Falling action / conclusion (detail)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      g: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/g_lg.png" width="640" height="480" /></div><div class="bottomwht">Def Jux<br />T-shirts for a New York record label.</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/defjux/dj1.jpg" width="640" height="480" /></div> \
+<div class="bottom">Tee #1: The alphabet is a rapper&#8217;s best friend</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/defjux/dj2.gif" width="640" height="480" /></div> \
+<div class="bottom">Tee #2: The stick-up </div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      h: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/h_lg.png" width="640" height="480" /></div><div class="bottomwht">Various<br />Smaller jobs than the small jobs that preceded them.</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  	 
+	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/various/mew1.jpg" width="640" height="480" /></div> \
+<div class="bottom">Media Eye Works: identity</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 	 
+	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/various/mew2.jpg" width="640" height="480" /></div> \
+<div class="bottom">Stationery</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/various/riggler1.jpg" width="640" height="480" /></div> \
+<div class="bottom">Riggler: A tee-shirt for my friend the Riggler</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/various/riggler2.jpg" width="640" height="480" /></div> \
+<div class="bottom">The tee-shirt&#8217;s guts</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },	 	  	 	  	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/various/riggler4.jpg" width="640" height="480" /></div> \
+<div class="bottom">The tee-shirt&#8217;s voice</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 
+	 	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/various/rw1.jpg" width="640" height="480" /></div> \
+<div class="bottom">Ray West: CD package for a Bronx-born producer</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  	 	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/various/rw2.jpg" width="640" height="480" /></div> \
+<div class="bottom">CD interior</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	 
+	  
+	  	
+	  
+	  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/empire/es4.jpg" width="640" height="480" /></div> \
+<div class="bottom">Empire State: Snoop (front) </div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/empire/es5.jpg" width="640" height="480" /></div> \
+<div class="bottom">Snoop (back)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	    	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/empire/es2.jpg" width="640" height="480" /></div> \
+<div class="bottom">King of the hill</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  	    
+
+	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/blue_cream/bc2.jpg" width="640" height="480" /></div> \
+<div class="bottom">Blue & Cream: A skateboard for a Hamptons based boutique</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      i: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/i_lg.png" width="640" height="480" /></div><div class="bottomwht">A Pawns Rebellion<br />Logos, collateral and website for a Brooklyn based folk, punk, doo-wop, hip-hop band.</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },    	  {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/apr/apr1.jpg" width="640" height="480" /></div> \
+<div class="bottom">Logotype</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },      {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/apr/apr2.jpg" width="640" height="480" /></div> \
+<div class="bottom">Logo</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/apr/apr3.jpg" width="640" height="480" /></div> \
+<div class="bottom">Sticker 1</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/apr/apr4.jpg" width="640" height="480" /></div> \
+<div class="bottom">Sticker 2</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/apr/apr5.jpg" width="640" height="480" /></div> \
+<div class="bottom">Poster</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/apr/apr5a.jpg" width="640" height="480" /></div> \
+<div class="bottom">Poster (detail)</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	        {
+        markup:   '<div class="about">\
+<div class="items"><a href="http://apawnsrebellion.com/" target="_blank"><img src="../2011/images/work/apr/apr6.jpg" width="640" height="480" /></a></div> \
+<div class="bottom">Website</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      j: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/j_lg.png" width="640" height="480" /></div><div class="bottomwht">The New York Times<br />Illustrations for the letters section of the grey lady.</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/various/nyt1.jpg" width="640" height="480" /></div> \
+<div class="bottom">Repondez s&#8217;il vous plait!</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/various/nyt2.jpg" width="640" height="480" /></div> \
+<div class="bottom">Supreme</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }],
+
+      k: [{
+        markup:   '<div class="aboutone">\
+<div class="items"><img src="../2011/images/work_letters/k_lg.png" width="640" height="480" /></div><div class="bottomwht">Zut Alors!<br />Promotional materials to generate some interest (read: $) in the studio.</div>\
+</div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/zutalors/za1.jpg" width="640" height="480" /></div> \
+<div class="bottom">The business card</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  	  
+	  	  	 	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/zutalors/za1a.jpg" width="640" height="480" /></div> \
+<div class="bottom">The business card&#8217;s soul</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  	  	  	 	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/zutalors/za2.jpg" width="640" height="480" /></div> \
+<div class="bottom">Opening Announcement</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  	  	  	 	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/zutalors/za3.jpg" width="640" height="480" /></div> \
+<div class="bottom">Opening Announcement 2</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  	  	  	 	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/zutalors/za4.jpg" width="640" height="480" /></div> \
+<div class="bottom">Opening Announcement 3</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  	  	  	 	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/zutalors/za5.jpg" width="640" height="480" /></div> \
+<div class="bottom">Opening Announcement 4</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      },
+	  
+	  
+	  
+	  	  	  	 	 	  	 	  	 	 	  	 	  	  		  	  	  	  	  	  	  	        {
+        markup:   '<div class="about">\
+<div class="items"><img src="../2011/images/work/zutalors/za7.jpg" width="640" height="480" /></div> \
+<div class="bottom">Opening Announcement 5</div></div>',
+        width:    712,
+        height:   800,
+        padding:  20
+      }]
+
+}
+
+var galholder;
+
+if (queryDict.n == '1') { galholder = worksects.a.concat(worksects.b).concat(worksects.c).concat(worksects.d).concat(worksects.e).concat(worksects.f).concat(worksects.g).concat(worksects.h).concat(worksects.i).concat(worksects.j).concat(worksects.k); };
+
+if (queryDict.n == '2') { galholder = worksects.b.concat(worksects.c).concat(worksects.d).concat(worksects.e).concat(worksects.f).concat(worksects.g).concat(worksects.h).concat(worksects.i).concat(worksects.j).concat(worksects.k).concat(worksects.a); };
+
+if (queryDict.n == '3') { galholder = worksects.c.concat(worksects.d).concat(worksects.e).concat(worksects.f).concat(worksects.g).concat(worksects.h).concat(worksects.i).concat(worksects.j).concat(worksects.k).concat(worksects.a).concat(worksects.b); };
+
+if (queryDict.n == '4') { galholder = worksects.d.concat(worksects.e).concat(worksects.f).concat(worksects.g).concat(worksects.h).concat(worksects.i).concat(worksects.j).concat(worksects.k).concat(worksects.a).concat(worksects.b).concat(worksects.c); };
+
+if (queryDict.n == '5') { galholder = worksects.e.concat(worksects.f).concat(worksects.g).concat(worksects.h).concat(worksects.i).concat(worksects.j).concat(worksects.k).concat(worksects.a).concat(worksects.b).concat(worksects.c).concat(worksects.d); };
+
+if (queryDict.n == '6') { galholder = worksects.f.concat(worksects.g).concat(worksects.h).concat(worksects.i).concat(worksects.j).concat(worksects.k).concat(worksects.a).concat(worksects.b).concat(worksects.c).concat(worksects.d).concat(worksects.e); };
+
+if (queryDict.n == '7') { galholder = worksects.g.concat(worksects.h).concat(worksects.i).concat(worksects.j).concat(worksects.k).concat(worksects.a).concat(worksects.b).concat(worksects.c).concat(worksects.d).concat(worksects.e).concat(worksects.f); };
+
+if (queryDict.n == '8') { galholder = worksects.h.concat(worksects.i).concat(worksects.j).concat(worksects.k).concat(worksects.a).concat(worksects.b).concat(worksects.c).concat(worksects.d).concat(worksects.e).concat(worksects.f).concat(worksects.g); };
+
+if (queryDict.n == '9') { galholder = worksects.i.concat(worksects.j).concat(worksects.k).concat(worksects.a).concat(worksects.b).concat(worksects.c).concat(worksects.d).concat(worksects.e).concat(worksects.f).concat(worksects.g).concat(worksects.h); };
+
+if (queryDict.n == '10') { galholder = worksects.j.concat(worksects.k).concat(worksects.a).concat(worksects.b).concat(worksects.c).concat(worksects.d).concat(worksects.e).concat(worksects.f).concat(worksects.g).concat(worksects.h).concat(worksects.i); };
+
+if (queryDict.n == '11') { galholder = worksects.k.concat(worksects.a).concat(worksects.b).concat(worksects.c).concat(worksects.d).concat(worksects.e).concat(worksects.f).concat(worksects.g).concat(worksects.h).concat(worksects.i).concat(worksects.j); };
+
+
+
+  var galleries = [];
+  function isg_init() {
+    galleries.push(new com.buzamoto.ImageShiftGallery.Gallery('gallery',galholder));
+   
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // EVENTS
+  Event.observe(window, 'load', isg_init, false);
+</script>
+
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+
+
+</script>
+
+<script type="text/javascript">
+
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17480081-1']);
+  _gaq.push(['_setDomainName', '.zutalorsinc.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('../2011/images/grad_pnk_l_smaller.png','../2011/images/grad_pnk_r_smaller.png')">
+
+<div id="gallery" class="gallery" style="position: relative; width: 100%;"></div>
+
+<div class="hoverrblink"><img src="../2011/images/grad_pnk_r_blink.gif" name="blinkerr" width="150" height="1000" border="0" id="blinkerr" /></div>
+  
+  <div class="hoverl"><a href="#" id="gallery_prev" class="isg_button" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('l','','../2011/images/grad_pnk_l_smaller.png',1)"><img src="../2011/images/grad_off.png" name="l" width="150" height="1000" border="0" id="l" /></a></div>
+<div class="hoverr"><a href="#" id="gallery_next" class="isg_button" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r','','../2011/images/grad_pnk_r_smaller.png',1)"><img src="../2011/images/grad_off.png" name="r" width="150" height="1000" border="0" id="r" /></a></div>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+Title: ZUT ALORS!
+----
+Author: Zut Alors!
+----
+Description: Description meta tag TK TK TK
+----
+Copyright: © 2009-(date: Year) (link: http://bastianallgeier.com text: Bastian Allgeier GmbH)

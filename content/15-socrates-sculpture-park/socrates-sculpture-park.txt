@@ -1,0 +1,7 @@
+Title: Socrates Sculpture Park
+----
+Text: The gentle and warm smell of ozone is in the air; waves of heat wiggle up off of the pavement like see-through litle worms. The East River meets the shoreline lazily, and Manhattan loiters further towards that selfsame east, super-cool, like your friend in high school who knew just what to say and how to wear it.
+----
+Fontsize: 3
+----
+Relatedimgs: 

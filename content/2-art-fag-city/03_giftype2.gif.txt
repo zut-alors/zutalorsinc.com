@@ -1,0 +1,5 @@
+Imagescale: 3
+----
+Caption: 
+----
+Someinf: Type Gif

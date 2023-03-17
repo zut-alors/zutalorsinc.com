@@ -1,0 +1,7 @@
+Content: may your pain be cham pagne
+----
+Title: MAY YOUR PAIN BE CHAM PAGNE
+----
+Text: MAY/--/YOUR/--/PAIN/--/BE/--/CHAM/--/PAGNE
+----
+Enabled: 1

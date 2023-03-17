@@ -1,0 +1,3 @@
+Imagescale: 3
+----
+Someinf: Image Gif

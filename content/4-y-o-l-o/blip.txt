@@ -1,0 +1,7 @@
+Title: Y O L O
+----
+Content: Y O L O
+----
+Enabled: 1
+----
+Text: Y/--/O/--/L/--/O

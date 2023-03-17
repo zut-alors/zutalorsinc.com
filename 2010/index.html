@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!--[if IE 6]>
+<meta http-equiv="refresh" content="0;URL=ie/" />
+<![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ZUT ALORS!</title>
+<script type="text/javascript" src="../2011/swfobject.js"></script>
+<style type="text/css">
+	
+	/* hide from ie on mac \*/
+	html {
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	#flashcontent {
+		height: 100%;
+		font-family:Arial, Helvetica, sans-serif;
+		color:#000;
+	}
+	/* end hide */
+
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		background-color: #99FF33;
+	}
+
+.content {
+	font-family: New Roman, Times, Georgia, Times, serif;
+	font-size: 13px;
+	font-style: italic;
+	padding-top:10px;
+	padding-left:24px;
+}
+a:link {
+	color: #000;
+}
+a:visited {
+	color: #000;
+}
+a:hover {
+	color: #666;
+}
+a:active {
+	color: #666;
+}
+</style>
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+
+<script type="text/javascript" src="../2011/js/soundmanager2.js"></script>
+
+<!-- configure it for your use -->
+<script type="text/javascript">
+soundManager.url = '../2011/swf/'; // directory where SM2 .SWFs live
+soundManager.debugMode = false;
+
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function sndbutton() {
+	
+	
+      var songNames = new Array(3);
+      songNames[0] = "zut1";
+      songNames[1] = "zut2";
+      songNames[2] = "zut3";
+	  
+	  var songFiles = new Array(3);
+      songFiles[0] = "../2011/song/zut1.mp3";
+      songFiles[1] = "../2011/song/zut2.mp3";
+	  songFiles[2] = "../2011/song/zut3.mp3";
+	  
+      var firstRandomNumber = (Math.floor((Math.random()*3)))
+	  
+	  soundManager.stopAll();
+  soundManager.play(songNames[firstRandomNumber],songFiles[firstRandomNumber]);
+}
+
+
+var nVer = navigator.appVersion;
+var nAgt = navigator.userAgent;
+var browserName  = navigator.appName;
+var fullVersion  = ''+parseFloat(navigator.appVersion); 
+var majorVersion = parseInt(navigator.appVersion,10);
+var nameOffset,verOffset,ix;
+
+// In MSIE, the true version is after "MSIE" in userAgent
+if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+ browserName = "Microsoft Internet Explorer";
+ fullVersion = nAgt.substring(verOffset+5);
+}
+// In Opera, the true version is after "Opera" 
+else if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
+ browserName = "Opera";
+ fullVersion = nAgt.substring(verOffset+6);
+}
+// In Chrome, the true version is after "Chrome" 
+else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+ browserName = "Chrome";
+ fullVersion = nAgt.substring(verOffset+7);
+}
+// In Safari, the true version is after "Safari" 
+else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+ browserName = "Safari";
+ fullVersion = nAgt.substring(verOffset+7);
+}
+// In Firefox, the true version is after "Firefox" 
+else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+ browserName = "Firefox";
+ fullVersion = nAgt.substring(verOffset+8);
+}
+// In most other browsers, "name/version" is at the end of userAgent 
+else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < (verOffset=nAgt.lastIndexOf('/')) ) 
+{
+ browserName = nAgt.substring(nameOffset,verOffset);
+ fullVersion = nAgt.substring(verOffset+1);
+ if (browserName.toLowerCase()==browserName.toUpperCase()) {
+  browserName = navigator.appName;
+ }
+}
+// trim the fullVersion string at semicolon/space if present
+if ((ix=fullVersion.indexOf(";"))!=-1) fullVersion=fullVersion.substring(0,ix);
+if ((ix=fullVersion.indexOf(" "))!=-1) fullVersion=fullVersion.substring(0,ix);
+
+majorVersion = parseInt(''+fullVersion,10);
+if (isNaN(majorVersion)) {
+ fullVersion  = ''+parseFloat(navigator.appVersion); 
+ majorVersion = parseInt(navigator.appVersion,10);
+}
+
+
+if (browserName == "Chrome") {
+	var addedPx = 0;
+
+} else {
+
+var addedPx = 0;
+
+}
+
+function popUp(URL,W,H) {
+day = new Date();
+id = day.getTime();
+var rand_noh = Math.random();
+var rand_now = Math.random();
+var topper = Math.floor(screen.width * rand_now);
+var lefter = Math.floor(screen.height * rand_noh);
+
+Hi = parseInt(H);
+Hb = eval(addedPx + Hi);
+
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,top=' + topper + ',left=' + lefter +',width=' + W + ',height=' + Hb);");
+}
+
+function popUpB(URL,W,H) {
+day = new Date();
+id = day.getTime();
+var rand_noh = Math.random();
+var rand_now = Math.random();
+var topper = Math.floor(screen.width * rand_now);
+var lefter = Math.floor(screen.height * rand_noh);
+
+Hi = parseInt(H);
+Hb = eval(addedPx + Hi);
+
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=yes,location=0,statusbar=0,menubar=0,resizable=yes,top=' + topper + ',left=' + lefter +',width=' + W + ',height=' + Hb);");
+}
+
+function popUpLoc(URL,W,H,T,L) {
+day = new Date();
+id = day.getTime();
+var lefter = (screen.width)*(L/100);
+var topper = (screen.height)*(T/100);
+
+if (lefter < 0) lefter = 0;
+if (topper < 0) topper = 0;
+
+
+Hb = eval(addedPx + H);
+
+
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,top=' + topper + ',left=' + lefter +',width=' + W + ',height=' + Hb);");
+}
+
+
+function randPop (T,L) {
+    var arrName = new Array(28);
+    arrName[0] = "pop.html?pop=abs";
+    arrName[1] = "pop.html?pop=amiri";
+    arrName[2] = "pop.html?pop=artabout";
+    arrName[3] = "pop.html?pop=believe";
+    arrName[4] = "pop.html?pop=bestlittle";
+    arrName[5] = "pop.html?pop=bigidea";
+    arrName[6] = "pop.html?pop=billshake";
+    arrName[7] = "pop.html?pop=boudo";
+    arrName[8] = "pop.html?pop=danifest";
+    arrName[9] = "pop.html?pop=darkside";
+	arrName[10] = "pop.html?pop=deathplus";
+	arrName[11] = "pop.html?pop=dollar";
+	arrName[12] = "pop.html?pop=effort";
+		arrName[13] = "pop.html?pop=yourtown";
+//	arrName[13] = "pop.html?pop=equate";
+	arrName[14] = "pop.html?pop=exclaim";
+	arrName[15] = "pop.html?pop=extra";
+	arrName[16] = "pop.html?pop=greetings";
+	arrName[17] = "pop.html?pop=lesson";
+	arrName[18] = "pop.html?pop=lightside";
+	arrName[19] = "pop.html?pop=louis";
+	arrName[20] = "pop.html?pop=now";
+	arrName[21] = "pop.html?pop=officer";
+	arrName[22] = "pop.html?pop=optical";
+	arrName[23] = "pop.html?pop=relation";
+	arrName[24] = "pop.html?pop=rivine";
+	arrName[25] = "pop.html?pop=sizeusa";
+	arrName[26] = "pop.html?pop=thisisitall";
+	arrName[27] = "pop.html?pop=uber";
+
+	  
+	  var popW = new Array(28);
+      popW[0] = "253";
+      popW[1] = "364";
+      popW[2] = "319";
+      popW[3] = "427";
+      popW[4] = "637";
+      popW[5] = "515";
+      popW[6] = "526";
+      popW[7] = "250";
+      popW[8] = "235";
+      popW[9] = "502";
+	  popW[10] = "392";
+	  popW[11] = "161";
+	  popW[12] = "809";
+	  	  popW[13] = "745";
+//	  popW[13] = "600";
+	  popW[14] = "113";
+	  popW[15] = "254";
+	  popW[16] = "420";
+	  popW[17] = "673";
+	  popW[18] = "402";
+	  popW[19] = "729";
+	  popW[20] = "302";
+	  popW[21] = "284";
+	  popW[22] = "641";
+	  popW[23] = "617";
+	  popW[24] = "169";
+	  popW[25] = "224";
+	  popW[26] = "358";
+	  popW[27] = "542";
+
+	  
+	  var popH = new Array(28);
+      popH[0] = "130";
+      popH[1] = "258";
+      popH[2] = "196";
+      popH[3] = "131";
+      popH[4] = "130";
+      popH[5] = "264";
+      popH[6] = "261";
+      popH[7] = "131";
+      popH[8] = "131";
+      popH[9] = "134";
+	  popH[10] = "392";
+	  popH[11] = "246";
+	  popH[12] = "131";
+	  	 popH[13] = "130";
+//	  popH[13] = "100";
+	  popH[14] = "229";
+	  popH[15] = "131";
+	  popH[16] = "197";
+	  popH[17] = "110";
+	  popH[18] = "100";
+	  popH[19] = "100";
+	  popH[20] = "261";
+	  popH[21] = "183";
+	  popH[22] = "197";
+	  popH[23] = "199";
+	  popH[24] = "131";
+	  popH[25] = "261";
+	  popH[26] = "263";
+	  popH[27] = "110";
+
+      var firstRandomNumber = (Math.round((Math.random()*27)))
+      popUp(arrName[firstRandomNumber],popW[firstRandomNumber],popH[firstRandomNumber]);
+}
+
+function winZ() {
+	randPop(60.33519,10.04728);
+	popUp('about.html',436,288,46.0893,0.709219);
+}
+function winU() {
+	randPop(49.7206,32.9787);
+	popUpLoc('contact.html',400,725,2,70);
+}
+function winT() {
+	randPop(41.15456,39.24349);
+	popUp('travaIller.html',712,188,3.9106,43.1442);
+}
+function winA() {
+	randPop(34.8230,49.1725);
+	popUp('art.html',452,552,28.6778,36.9976);
+}
+function winL() {
+	randPop(42.8305,65.2482);
+	popUp('letters.html',488,740,10.4283,46.335);
+}
+function winO() {
+	randPop(43.01675,35.10638);
+	popUpB('http://blog.zutalorsinc.com',1100,780,12.8491,9.10165);
+}
+function winR() {
+	randPop(70.57728,61.9385);
+	popUp('rest.html',500,170,79.5158,73.99527);
+}
+function winS() {
+	sndbutton();
+}
+function winE() {
+	popUpLoc('pop.html?pop=effort',809,131,0,7.1875);
+	popUpLoc('pop.html?pop=lesson',673,110,7.3005,7.1875);
+	popUpLoc('pop.html?pop=optical',641,197,0,30.989583);
+	//popUpLoc('pop.html?pop=equate',600,100,4.75382,53.333333);
+	popUpLoc('pop.html?pop=now',302,261,0,61.09375);
+	popUpLoc('pop.html?pop=billshake',526,261,0,72.552);
+	popUpLoc('pop.html?pop=thisisitall',358,263,12.139219,79.53125);
+	popUpLoc('pop.html?pop=officer',284,183,24.78777,69.375);
+	popUpLoc('pop.html?pop=sizeusa',224,261,21.3073,59.479);
+	
+	if (browserName == "Chrome") {
+
+
+} else {
+
+
+	popUpLoc('pop.html?pop=abs',253,130,38.794,51.718);
+
+}
+	popUpLoc('pop.html?pop=believe',427,131,34.55,56.093);
+	popUpLoc('pop.html?pop=dollar',161,246,33.4465,46.093);
+	popUpLoc('pop.html?pop=danifest',235,131,44.057,35.5208);
+	popUpLoc('pop.html?pop=boudo',250,131,50,37.3958);
+	
+		
+	if (browserName == "Chrome") {
+
+
+} else {
+
+
+	popUpLoc('pop.html?pop=amiri',364,258,52.3769,23.6979);
+
+}
+	popUpLoc('pop.html?pop=extra',254,131,55.17826,19.7916);
+	popUpLoc('pop.html?pop=artabout',319,196,60.3565,8.85416);
+	popUpLoc('pop.html?pop=deathplus',392,392,64.685,0);
+	popUpLoc('pop.html?pop=lightside',402,100,80.98471,4.0104);
+	popUpLoc('pop.html?pop=darkside',502,134,70.54329,11.197);
+	popUpLoc('pop.html?pop=relation',617,199,77.0797,17.656);
+	popUpLoc('pop.html?pop=bestlittle',637,130,87.3514,1.0937);
+	
+		if (browserName == "Chrome") {
+
+
+} else {
+
+
+	popUpLoc('pop.html?pop=uber',542,110,89.64346,24.9479);
+
+}
+	popUpLoc('pop.html?pop=yourtown',745,130,78.438,33.6979);
+	popUpLoc('pop.html?pop=louis',729,100,90.1528,49.583);
+	popUpLoc('pop.html?pop=rivine',169,131,84.8047,53.5937);
+	popUpLoc('pop.html?pop=greetings',420,197,78.7775,58.9583);
+	popUpLoc('pop.html?pop=bigidea',515,264,76.57,74.375);
+	popUpLoc('pop.html?pop=exclaimb',113,229,23.3446,53.6979);
+}
+
+
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17480081-1']);
+  _gaq.push(['_setDomainName', '.zutalorsinc.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('../2011/images/grad_wht_l_smaller.png','../2011/images/grad_wht_r_smaller.png','../2011/images/grad_blu_l.png','../2011/images/grad_blu_r.png','../2011/images/grad_wht_l.png','../2011/images/grad_wht_r.png','../2011/images/art/art-1.png')">
+
+	<div id="flashcontent"><a href="http://get.adobe.com/flashplayer/"><img src="download.png" width="800" height="600" border="0" /></a>
+<div class="content">
+  <table width="320" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="160">536 6 Ave, fl. 4<br />
+        New York, NY 10011</td>
+      <td width="160">+1 212 414 0410<br />
+  <a href="mailto:ohrats@zutalorsinc.com">ohrats@zutalorsinc.com</a></td>
+    </tr>
+  </table><br />
+  <a href="/">Click here if you already have Flash Player 8.</a>
+</div>
+
+	</div>
+	<script type="text/javascript">
+
+	var movlist = ["one", "two", "three", "four", "five"];
+	var getter = "rollover_" + movlist[Math.floor(Math.random() * movlist.length)] + ".swf";
+
+		// <![CDATA[
+		
+		var so = new SWFObject(getter, "zut", "100%", "100%", "8", "#000");
+		so.addParam("scale", "noscale");
+		so.write("flashcontent");
+		
+		// ]]>
+	</script>
+	
+</body>
+</html>

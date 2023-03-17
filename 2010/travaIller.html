@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>T IS FOR TRAVAILLER</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FF33CC;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	color:#FFF;
+	font-size:13px;
+	font-style:italic;
+}
+
+body {
+	border:0;
+}
+
+
+.hoverl {
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+
+.hoverr {
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:20;
+}
+
+.hoverrblink {
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:10;
+}
+
+
+.wrapper {
+	padding:20px;
+	padding-left:32px;
+	padding-right:32px;
+}
+
+
+.gallery {
+  overflow: hidden;
+}
+
+/* --------------------------------------- DONT CHANGE ---------------------- */
+
+.isg_container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+table.isg_table {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  border-spacing: 0;
+  border: none;
+}
+
+table.isg_table img { border: none; }
+
+table.isg_table tr {
+  margin: 0;
+  padding: 0;
+}
+
+table.isg_table td {
+  margin: 0;
+  padding: 0;
+}
+
+.isg_markup-wrapper {
+  overflow: hidden;
+}
+
+.isg_controller-wrapper {
+  float: left;
+  width: 100%;
+}
+
+.ctr {
+  width: 100%;
+  text-align:center;
+}
+
+
+.lineh {
+	line-height:34px;
+}
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+
+a:active, a:focus {
+outline: 0
+}
+
+
+
+
+-->
+</style>
+
+<script src="../2011/js/prototype.js" language="JavaScript" type="text/javascript"></script>
+<script src="../2011/js/BM_ImageShiftGallery.js" language="JavaScript" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var galleries = [];
+  function isg_init() {
+    galleries.push(new com.buzamoto.ImageShiftGallery.Gallery('gallery',[
+																		  {
+        markup:   '<table width="648" border="0" cellpadding="0" cellspacing="0"> <tr> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=1\',712,580,20,20);"><img src="../2011/images/work_letters/a.png" width="79" height="125" border="0" /><br />Good Magazine</a></div></td> <td width="2" align="center" valign="middle"><img src="../2011/images/spacer.png" width="2" height="148" /></td> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=2\',712,580,20,20);"><img src="../2011/images/work_letters/b.png" width="74" height="125" /><br />Brass Rat</a></div></td> <td width="2" align="center" valign="middle"><img src="../2011/images/spacer.png" width="2" height="148" /></td> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=3\',712,580,20,20);"><img src="../2011/images/work_letters/c.png" width="73" height="125" /><br />Atlason Racing</a></div></td> <td width="2" align="center" valign="middle"><img src="../2011/images/spacer.png" width="2" height="148" /></td> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=4\',712,580,20,20);"><img src="../2011/images/work_letters/d.png" width="73" height="125" /><br />Christie&#8217;s</a></div></td> </tr> </table>',
+        width:    648,
+        height:   148,
+        padding:  60
+      },																		  {
+        markup:   '<table width="648" border="0" cellpadding="0" cellspacing="0"> <tr>  <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=5\',712,580,20,20);"><img src="../2011/images/work_letters/e.png" width="68" height="125" /><br />Product Design</a></div></td> <td width="2" align="center" valign="middle"><img src="../2011/images/spacer.png" width="2" height="148" /></td> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=6\',712,580,20,20);"><img src="../2011/images/work_letters/f.png" width="67" height="125" /><br />Pratt</a></div></td>  <td width="2" align="center" valign="middle"><img src="../2011/images/spacer.png" width="2" height="148" /></td> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=7\',712,580,20,20);"><img src="../2011/images/work_letters/g.png" width="74" height="125" /><br />Def Jux</a></div></td>  <td width="2" align="center" valign="middle"><img src="../2011/images/spacer.png" width="2" height="148" /></td> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=8\',712,580,20,20);"><img src="../2011/images/work_letters/h.png" width="74" height="125" /><br />Various</a></div></td> </tr> </table> ',
+        width:    648,
+        height:   148,
+        padding:  60
+      },																		  {
+        markup:   '<table width="486" border="0" cellpadding="0" cellspacing="0"> <tr> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=9\',712,580,20,20);"><img src="../2011/images/work_letters/i.png" width="23" height="125" /><br />A Pawns Rebellion</a></div></td>  <td width="2" align="center" valign="middle"><img src="../2011/images/spacer.png" width="2" height="148" /></td> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=10\',712,580,20,20);"><img src="../2011/images/work_letters/j.png" width="74" height="125" /><br />The New York Times</a></div></td>  <td width="2" align="center" valign="bottom"><div class="lineh"><img src="../2011/images/spacer.png" width="2" height="148" /></td> <td width="160" align="center" valign="bottom"><div class="lineh"><a href="javascript:popUpLoc(\'work.html?n=11\',712,580,20,20);"><img src="../2011/images/work_letters/k.png" width="79" height="125" /><br />Zut Alors!</a></div></td>  </tr> </table>',
+        width:    648,
+        height:   148,
+        padding:  60
+      }
+
+    ]));
+    
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // EVENTS
+  Event.observe(window, 'load', isg_init, false);
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+
+var nVer = navigator.appVersion;
+var nAgt = navigator.userAgent;
+var browserName  = navigator.appName;
+var fullVersion  = ''+parseFloat(navigator.appVersion); 
+var majorVersion = parseInt(navigator.appVersion,10);
+var nameOffset,verOffset,ix;
+
+// In MSIE, the true version is after "MSIE" in userAgent
+if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+ browserName = "Microsoft Internet Explorer";
+ fullVersion = nAgt.substring(verOffset+5);
+}
+// In Opera, the true version is after "Opera" 
+else if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
+ browserName = "Opera";
+ fullVersion = nAgt.substring(verOffset+6);
+}
+// In Chrome, the true version is after "Chrome" 
+else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+ browserName = "Chrome";
+ fullVersion = nAgt.substring(verOffset+7);
+}
+// In Safari, the true version is after "Safari" 
+else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+ browserName = "Safari";
+ fullVersion = nAgt.substring(verOffset+7);
+}
+// In Firefox, the true version is after "Firefox" 
+else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+ browserName = "Firefox";
+ fullVersion = nAgt.substring(verOffset+8);
+}
+// In most other browsers, "name/version" is at the end of userAgent 
+else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) < (verOffset=nAgt.lastIndexOf('/')) ) 
+{
+ browserName = nAgt.substring(nameOffset,verOffset);
+ fullVersion = nAgt.substring(verOffset+1);
+ if (browserName.toLowerCase()==browserName.toUpperCase()) {
+  browserName = navigator.appName;
+ }
+}
+// trim the fullVersion string at semicolon/space if present
+if ((ix=fullVersion.indexOf(";"))!=-1) fullVersion=fullVersion.substring(0,ix);
+if ((ix=fullVersion.indexOf(" "))!=-1) fullVersion=fullVersion.substring(0,ix);
+
+majorVersion = parseInt(''+fullVersion,10);
+if (isNaN(majorVersion)) {
+ fullVersion  = ''+parseFloat(navigator.appVersion); 
+ majorVersion = parseInt(navigator.appVersion,10);
+}
+
+
+if (browserName == "Chrome") {
+	var addedPx = 0;
+
+} else {
+
+var addedPx = 0;
+
+}
+
+
+function popUp(URL,W,H) {
+day = new Date();
+id = day.getTime();
+var rand_noh = Math.random();
+var rand_now = Math.random();
+var topper = Math.floor(screen.width * rand_now);
+var lefter = Math.floor(screen.height * rand_noh);
+
+Hi = parseInt(H);
+Hb = eval(addedPx + Hi);
+
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,top=' + topper + ',left=' + lefter +',width=' + W + ',height=' + Hb);");
+}
+
+function popUpLoc(URL,W,H,T,L) {
+day = new Date();
+id = "work";
+var lefter = (screen.width-W)*(L/100);
+var topper = (screen.height-H)*(T/100);
+
+if (lefter < 0) lefter = 0;
+if (topper < 0) topper = 0;
+
+
+Hb = eval(addedPx + H);
+
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,top=' + topper + ',left=' + lefter +',width=' + W + ',height=' + Hb);");
+}
+
+</script>
+
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17480081-1']);
+  _gaq.push(['_setDomainName', '.zutalorsinc.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('../2011/images/grad_wht_l_smaller.png','../2011/images/grad_wht_r_smaller.png','../2011/images/grad_pnk_l_smaller.png','../2011/images/grad_pnk_r_smaller.png')">
+  <div class="wrapper">
+  <div id="gallery" class="gallery" style="position: relative; width: 100%;">
+  </div></div>
+  <div class="hoverrblink"><img src="../2011/images/blink_workante.gif" name="blinkerr" width="70" height="1000" border="0" id="blinkerr" /></div>
+  <div class="hoverl"><a href="#" id="gallery_prev" class="isg_button" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('l','','../2011/images/grad_wht_l_smaller.png',1)"><img src="../2011/images/grad_off.png" name="l" width="70" height="1000" border="0" id="l" /></a></div><div class="hoverr"><a href="#" id="gallery_next" class="isg_button" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r','','../2011/images/grad_wht_r_smaller.png',1)"><img src="../2011/images/grad_off.png" name="r" width="70" height="1000" border="0" id="r" /></a></div>
+  
+</body>
+</html>

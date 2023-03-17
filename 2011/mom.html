@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>R IS FOR REST ASSURED</title>
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.1.1/build/cssreset/reset-min.css">
+<style type="text/css">
+<!--
+html, body,td,th {
+	font-family: Times New Roman, Times, serif;
+	font-size: 13px;
+	color: #000;
+	background-color: #F00;
+	overflow:hidden;
+}
+body {
+	background-color: #F00;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.about {
+	font-style:italic;
+	padding:18px;
+	
+	width:537px;
+	cursor:default;
+}
+
+
+.hoverl {
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+
+.hoverr {
+	position:fixed;
+	top:0px;
+	right:0px;
+}
+
+
+.gallery {
+  overflow: hidden;
+}
+
+/* --------------------------------------- DONT CHANGE ---------------------- */
+
+.isg_container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+table.isg_table {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  border-spacing: 0;
+  border: none;
+}
+
+table.isg_table img { border: none; }
+
+table.isg_table tr {
+  margin: 0;
+  padding: 0;
+}
+
+table.isg_table td {
+  margin: 0;
+  padding: 0;
+}
+
+.isg_markup-wrapper {
+  overflow: hidden;
+}
+
+.isg_controller-wrapper {
+  float: left;
+  width: 100%;
+}
+
+
+-->
+</style>
+
+
+<script src="js/prototype.js" language="JavaScript" type="text/javascript"></script>
+<script src="js/BM_ImageShiftGallery.js" language="JavaScript" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var galleries = [];
+  function isg_init() {
+    galleries.push(new com.buzamoto.ImageShiftGallery.Gallery('gallery',[
+      {
+        markup:   '<img src="images/mom1.jpg" width="537" height="700" />',
+        width:    537,
+        height:   700,
+        padding:  60
+      },
+
+      {
+        markup:   '<img src="images/mom2.jpg" width="537" height="700" />',
+        width:    537,
+        height:   700,
+        padding:  20
+      }
+
+    ]));
+    
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////
+  // EVENTS
+  Event.observe(window, 'load', isg_init, false);
+</script>
+
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17480081-1']);
+  _gaq.push(['_setDomainName', '.zutalorsinc.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/grad_wht_l.png','images/grad_wht_r.png')">
+
+
+  <div id="gallery" class="gallery" style="position: relative; width: 100%;">
+  </div>
+  
+  
+  <div class="hoverl"><a href="#" id="gallery_prev" class="isg_button" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('l','','images/grad_wht_l.png',1)"><img src="images/grad_off.png" name="l" width="200" height="1000" border="0" id="l" /></a></div>
+<div class="hoverr"><a href="#" id="gallery_next" class="isg_button" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('r','','images/grad_wht_r.png',1)"><img src="images/grad_off.png" name="r" width="200" height="1000" border="0" id="r" /></a></div>
+
+</body>
+</html>
